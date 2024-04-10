@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allure images | Contact </title>
+	<link rel="stylesheet" href="css/contact.css" >
+    <link rel="stylesheet" href="CSS/default.css">
+</head>
+<body background="images/Banner2.jpg">
+  
+<header>
+   <div>
+    <div class="container">
+        <img alt="logo" src="images/Logo2.JPG" class="logo">
+        
+    <div class="header-text">
+        </div>
+    </div>
+    </div>
+
+   <nav id="sideNav">
+    <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="photos.html">PHOTOS</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+    </ul>
+   </nav>
+</header>
+<img alt="menuBtn" src="images/Menu.png" id="menuBtn">
+<script>
+ var menuBtn = document.getElementById("menuBtn");
+ var sideNav = document.getElementById("sideNav");
+
+ sideNav.style.right = "-250px";
+ menuBtn.onclick = function(){
+     if(sideNav.style.right == "-250px"){
+         sideNav.style.right = "0"; 
+     }
+     else{
+         sideNav.style.right = "-250px";
+     }
+ }
+</script>
+
+
+<p> Get in touch</p>
+
+    <form action="https://api.web3forms.com/submit" method="POST">
+		<input type="hidden" name="access_key" value="c8543992-17d4-4430-9686-b3ca9688aeaa">
+        <label for="name">Name:</label><br >
+		<input type="text" id="name" name="name" required><br >
+		<label for="email">Email:</label><br >
+		<input type="email" id="email" name="email" required><br >
+		<label for="message">Message:</label><br >
+		<textarea id="message" name="message"></textarea><br ><br >
+		<button type="submit" >Submit</button><br >
+		<button type="reset">Reset</button>
+	</form>
+
+    <footer>
+        <link rel="stylesheet" href="css/footer.css">
+    
+        <p>
+            <span property="dct:title">Allure Images &copy;</span> by 
+            <span property="cc:attributionName">Fatima</span> is licensed under 
+            <br>
+            <a  href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1"  target="_blank" 
+            rel="license noopener noreferrer">CC BY-NC-ND 4.0
+            <img alt="icons" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1">
+            <img alt="icons" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1">
+            <img alt="icons" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1">
+            <img alt="icons" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a></p>
+     
+       </footer>
+       
+
+</body>
+
+</html>
